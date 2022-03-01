@@ -122,10 +122,11 @@ else:
 
 print('\nPart B\n')                                         #Part B
 
-if 0 in [int1, int2] + list(result):
+value= [int1, int2] + list(result)
+if all(value):
     print("All the values are not non-zero.")
 
-elif 0 not in [int1, int2] + list(result):
+else:
     print("All the values are non-zero.")
 
 print('\nPart C\n')                                         #Part C
